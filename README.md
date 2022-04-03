@@ -24,7 +24,7 @@ ExecStartPost=/usr/bin/sdptool add SP
 
 sudo reboot
 
-- Add the followings in /etc/rc.local before "exit 0"
+- Add the following in /etc/rc.local before "exit 0"
 
 sudo bluetoothctl <<EOF \
 power on \
@@ -68,10 +68,10 @@ sudo reboot
 
 https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal&hl=en_US&gl=US
 
-- Connect to Raspberry pi
+- Connect to the Raspberry pi
 
-Goto bluetooth setting on the phone \
-Scan the devices. You can see "raspberrypi" device. Click the "raspberrypi" \
+Go to bluetooth settings on the phone \
+Scan the devices. You can see a "raspberrypi" device. Click "raspberrypi" \
 Input PIN Code: 1234
 
 - Open the Serial Bluetooth Terminal app
@@ -81,6 +81,6 @@ Click Devices. \
 Click Bluetooth Classic tag. You can see the "raspberrypi" device connected to phone \
 Connect to "raspberrypi device" \
 You can send wifi info to raspberrypi. {"ssid":"...","pw":"..."} \
-If wifi is configured successfully, the Pi return "OK"
-You can send other terminal commands to Raspberry Pi.
+If wifi is configured successfully, the Pi returns "OK"
+You can also send other terminal commands to the Raspberry Pi.
 
