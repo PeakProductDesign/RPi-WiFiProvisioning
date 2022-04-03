@@ -1,0 +1,10 @@
+[Unit]
+Descriptoin=simple agent service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=sudo /usr/bin/python /home/pi/RPi-WiFiProvisioning/simple-agent.py
+
+[Install]
+WantedBy=multi-user.target

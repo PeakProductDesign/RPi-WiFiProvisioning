@@ -1,0 +1,10 @@
+[Unit]
+Descriptoin=rfcomm server service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=sudo /usr/bin/python /home/pi/RPi-WiFiProvisioning/rfcomm-server.py
+
+[Install]
+WantedBy=multi-user.target
