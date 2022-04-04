@@ -76,11 +76,11 @@ Input PIN Code: 1234
 
 - Open the Serial Bluetooth Terminal app
 
-Open menu. \
+Open the menu. \
 Click Devices. \
-Click Bluetooth Classic tag. You can see the "raspberrypi" device connected to phone \
-Connect to "raspberrypi device" \
-You can send wifi info to raspberrypi. {"ssid":"...","pw":"..."} \
-If wifi is configured successfully, the Pi returns "OK"
-You can also send other terminal commands to the Raspberry Pi.
+Click Bluetooth Classic tag. You will see the "raspberrypi" device connected to your phone \
+Connect to the "raspberrypi" device \
+You can now send the wifi info to the Raspberry Pi as such {"ssid":"xxx","pw":"xxx"} \
+If the wifi is configured successfully, the Pi will return "OK"
+NOTE: This connection is not limited to Wifi Provisioning, and will also allow you to send ANY terminal commands to the Raspberry Pi.
 
