@@ -6,7 +6,7 @@ This application is tested in Raspberry Pi 4B using raspbian buster
 
 sudo apt-get install bluetooth bluez python-bluez
 
-git clone ....
+git clone https://github.com/PeakProductDevelopment/RPi-WiFiProvisioning.git
 
 chmod 755 -R ./RPi-WiFiProvisioning
 
@@ -15,12 +15,8 @@ chmod 755 -R ./RPi-WiFiProvisioning
 
 sudo nano /etc/systemd/system/dbus-org.bluez.service
 
-...
-
 ExecStart=/usr/lib/bluetooth/bluetoothd -C \
 ExecStartPost=/usr/bin/sdptool add SP
-
-...
 
 sudo reboot
 
@@ -40,11 +36,8 @@ bash /home/{username, ex:pi}/RPi-WiFiProvisioning/remove_all_paired_devices.sh
 
 sudo nano /etc/bluetooth/main.conf
 
-...
-
 DiscoverableTimeout = 0
 
-...
 
 - Copy/Paste Service files to /etc/systemd/system/
 
@@ -58,7 +51,7 @@ this is a bluetooth terminal server
 
 sudo systemctl daemon-reload \
 sudo systemctl enable simple_agent.service \
-sudo systemctl enalbe rfcommn_server.service \
+sudo systemctl enable rfcommn_server.service \
 
 sudo reboot
 
