@@ -1,6 +1,6 @@
 # RPi-WiFiProvisioning by Bluetooth Serial terminal
 
-This application is tested in Raspberry Pi 4B using raspbian buster
+This application is tested on a Raspberry Pi 4B using raspbian buster, and was intended for use by Schattke Chemical Consulting 
 
 # Step1 : Install bluetooth packages for python application and download github app
 
@@ -20,7 +20,7 @@ ExecStartPost=/usr/bin/sdptool add SP
 
 sudo reboot
 
-- Add the followings in /etc/rc.local before "exit 0"
+- Add the following in /etc/rc.local before "exit 0"
 
 sudo bluetoothctl <<EOF \
 power on \
@@ -61,19 +61,19 @@ sudo reboot
 
 https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal&hl=en_US&gl=US
 
-- Connect to Raspberry pi
+- Connect to the Raspberry pi
 
-Goto bluetooth setting on the phone \
-Scan the devices. You can see "raspberrypi" device. Click the "raspberrypi" \
+Go to bluetooth settings on the phone \
+Scan the devices. You can see a "raspberrypi" device. Click "raspberrypi" \
 Input PIN Code: 1234
 
 - Open the Serial Bluetooth Terminal app
 
-Open menu. \
+Open the menu. \
 Click Devices. \
-Click Bluetooth Classic tag. You can see the "raspberrypi" device connected to phone \
-Connect to "raspberrypi device" \
-You can send wifi info to raspberrypi. {"ssid":"...","pw":"..."} \
-If wifi is configured successfully, the Pi return "OK"
-You can send other terminal commands to Raspberry Pi.
+Click Bluetooth Classic tag. You will see the "raspberrypi" device connected to your phone \
+Connect to the "raspberrypi" device \
+You can now send the wifi info to the Raspberry Pi as such {"ssid":"xxx","pw":"xxx"} \
+If the wifi is configured successfully, the Pi will return "OK"
+NOTE: This connection is not limited to Wifi Provisioning, and will also allow you to send ANY terminal commands to the Raspberry Pi.
 
